@@ -1,0 +1,25 @@
+# Local assistant and project notes
+/.agents/
+/.aws/
+/.claude/
+/.codex/
+/AGENTS.md
+/CLAUDE.md
+
+# Local hardware investigation and development
+/3098N_Firmware_driver20211217/
+/akko-3098n-ctl/docs/protocol-investigation.md
+/akko-3098n-ctl/scripts/
+/akko-3098n-ctl/tests/
+/akko-3098n-ctl/ruff.toml
+
+# Local environments, packages, and device backups
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.akko-backups/
+*.akko.json

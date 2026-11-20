@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "akko-3098n-ctl"
+version = "0.1.0"
+description = "Linux control tool for the Akko 3098N keyboard over wired USB (320f:506a)"
+requires-python = ">=3.12"
+readme = "README.md"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [
+  { name = "nxn" },
+]
+dependencies = []
+
+[project.optional-dependencies]
+gui = ["PySide6-Essentials>=6.8"]
+
+[project.scripts]
+akko-ctl = "akko_ctl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["akko_ctl*"]
+
+[tool.setuptools.package-data]
+akko_ctl = ["90-akko-3098n-phantom-keys.hwdb"]

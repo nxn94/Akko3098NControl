@@ -1,0 +1,33 @@
+{
+  "format": "akko-3098n-usb-macros-v1",
+  "macros": [
+    {
+      "events": [
+        {
+          "action": "wait",
+          "delay_ms": 100
+        },
+        {
+          "key": "b",
+          "action": "down",
+          "delay_ms": 100
+        },
+        {
+          "key": "b",
+          "action": "up",
+          "delay_ms": 100
+        },
+        {
+          "key": "c",
+          "action": "down",
+          "delay_ms": 100
+        },
+        {
+          "key": "c",
+          "action": "up",
+          "delay_ms": 100
+        }
+      ]
+    }
+  ]
+}

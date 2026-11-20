@@ -1,0 +1,6 @@
+# Spurious consumer-control usages observed alongside ordinary key transitions.
+evdev:input:b0003v320Fp506A*
+ KEYBOARD_KEY_c050b=reserved
+ KEYBOARD_KEY_c060b=reserved
+ KEYBOARD_KEY_c0551=reserved
+ KEYBOARD_KEY_c0651=reserved

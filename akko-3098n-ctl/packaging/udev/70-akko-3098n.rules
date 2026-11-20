@@ -1,0 +1,4 @@
+# Grant the active desktop user access to the vendor interface only.
+# Separate rules are required: VID/PID and interface number have different parents.
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="320f", ATTRS{idProduct}=="506a", ENV{AKKO_3098N}="1"
+SUBSYSTEM=="hidraw", ENV{AKKO_3098N}=="1", ATTRS{bInterfaceNumber}=="01", TAG+="uaccess"
