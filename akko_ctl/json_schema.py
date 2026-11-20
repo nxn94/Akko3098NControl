@@ -12,10 +12,8 @@ import os
 from dataclasses import dataclass
 from typing import Any
 
-# Path to the shipped default presets (relative to this module's location).
-# This module lives at akko-3098n-ctl/akko_ctl/json_schema.py.
-# The repo root (with 3098N_Firmware_driver20211217/) is two levels up.
-_REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Locate an optional local vendor archive alongside the source package.
+_REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _DEFAULT_DATA = os.path.join(
     _REPO_ROOT,
     "3098N_Firmware_driver20211217",

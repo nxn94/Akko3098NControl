@@ -8,10 +8,11 @@
 
 # Local hardware investigation and development
 /3098N_Firmware_driver20211217/
-/akko-3098n-ctl/docs/protocol-investigation.md
-/akko-3098n-ctl/scripts/
-/akko-3098n-ctl/tests/
-/akko-3098n-ctl/ruff.toml
+/docs/protocol-investigation.md
+/scripts/
+/tests/
+/ruff.toml
+/akko-3098n-ctl/
 
 # Local environments, packages, and device backups
 .venv/
