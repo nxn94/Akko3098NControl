@@ -6,6 +6,8 @@ Configure lighting, paint and remap keys from an interactive layout, manage
 onboard macros, and save and restore device profiles. The CLI requires
 Python 3.12 or later and has no third-party runtime dependencies.
 
+![Akko 3098N virtual keyboard with W, A, S, and D selected for editing](docs/images/virtual-keyboard.png)
+
 ## Install
 
 Versioned source archives, Python wheels, and SHA-256 checksums are available
