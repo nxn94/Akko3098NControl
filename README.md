@@ -226,6 +226,8 @@ To publish a version, commit the updated version in `pyproject.toml` and push
 a matching tag such as `v0.1.0`. GitHub Actions verifies the version, builds a
 source archive and a wheel, checks that the wheel installs, and publishes
 both files with `SHA256SUMS`.
+If a tag push does not start a run, use **Actions → Release → Run workflow**
+and enter the existing tag.
 
 For a versioned AUR `PKGBUILD`, use the release's `akko_3098n_ctl-<version>.tar.gz`
 as the source and put its SHA-256 from `SHA256SUMS` in `sha256sums`. The source
