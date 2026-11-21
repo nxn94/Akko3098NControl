@@ -8,6 +8,9 @@ Python 3.12 or later and has no third-party runtime dependencies.
 
 ## Install
 
+Versioned source archives, Python wheels, and SHA-256 checksums are available
+on the [Releases page](https://github.com/nxn94/Akko3098NControl/releases).
+
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install .
@@ -216,6 +219,18 @@ brick the keyboard. No firmware or bootloader operations are part of this tool.
 
 See the [USB protocol reference](docs/usb-protocol.md) for report framing, settings,
 keymaps, colors, and onboard macro encoding.
+
+## Release packaging
+
+To publish a version, commit the updated version in `pyproject.toml` and push
+a matching tag such as `v0.1.0`. GitHub Actions verifies the version, builds a
+source archive and a wheel, checks that the wheel installs, and publishes
+both files with `SHA256SUMS`.
+
+For a versioned AUR `PKGBUILD`, use the release's `akko_3098n_ctl-<version>.tar.gz`
+as the source and put its SHA-256 from `SHA256SUMS` in `sha256sums`. The source
+archive includes the udev rule at `packaging/udev/70-akko-3098n.rules`.
+The AUR package recipe and its `.SRCINFO` are maintained separately.
 
 ## License
 

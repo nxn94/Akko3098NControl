@@ -1,0 +1,4 @@
+include docs/usb-protocol.md
+include examples/bc.macro.json
+include packaging/udev/70-akko-3098n.rules
+prune tests
